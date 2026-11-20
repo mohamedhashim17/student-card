@@ -1,0 +1,116 @@
+
+/* Header */
+
+.topbar {
+  height: 75px;
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Search Title */
+
+.top-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #64748b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Right Side Actions */
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-button {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  color: #475569;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background: #f1f5f9;
+}
+
+/* Admin Avatar */
+
+.admin-avatar {
+  width: 40px;
+  height: 40px;
+  background: #4f46e5;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.admin-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-label b {
+  font-size: 13px;
+  color: #1e293b;
+}
+
+.admin-label small {
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* Mobile Menu */
+
+.mobile-menu {
+  display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .topbar {
+    height: 65px;
+    padding: 0 15px;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .top-search {
+    font-size: 12px;
+  }
+
+  .admin-label {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .top-search span {
+    display: none;
+  }
+}

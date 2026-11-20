@@ -1,0 +1,109 @@
+
+.student-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.student-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.student-photo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e2e8f0;
+}
+
+.student-status {
+  padding: 5px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-active {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-inactive {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.student-card-info {
+  margin-bottom: 18px;
+}
+
+.student-card-info h3 {
+  font-size: 18px;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.student-register {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.student-card-info p {
+  font-size: 14px;
+  color: #475569;
+  margin: 6px 0;
+}
+
+.student-card-actions {
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+}
+
+.student-card-actions button {
+  flex: 1;
+  padding: 9px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.student-card-actions button:first-child {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.student-card-actions button:last-child {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.student-card-actions button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+  .student-card {
+    padding: 15px;
+  }
+
+  .student-card-info h3 {
+    font-size: 16px;
+  }
+}

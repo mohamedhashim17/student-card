@@ -1,0 +1,154 @@
+
+/* Dashboard heading */
+.dashboard-header {
+  margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+  color: #1e293b;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Dashboard content */
+.dashboard-content {
+  width: 100%;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+/* Search and filter section */
+.dashboard-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* Student details popup */
+.details-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.student-details {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.details-header h2 {
+  color: #1e293b;
+  font-size: 20px;
+}
+
+.details-close-btn {
+  border: none;
+  background: #f1f5f9;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.details-profile {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.details-profile img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.details-profile h3 {
+  color: #1e293b;
+  font-size: 19px;
+}
+
+.details-profile p {
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.details-info {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+}
+
+.details-info p {
+  color: #475569;
+  font-size: 14px;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+/* QR code */
+.qr-code {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 15px auto;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+  font-size: 13px;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header h1 {
+    font-size: 22px;
+  }
+
+  .student-details {
+    padding: 20px;
+  }
+}
